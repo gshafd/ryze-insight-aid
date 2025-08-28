@@ -225,7 +225,7 @@ const Orchestration = () => {
               ) : (
                 <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
               )}
-              {isRunning ? "Running Demo..." : "Start Demo"}
+              {isRunning ? "Running Agent..." : "Run Agent"}
             </Button>
           </div>
         </div>
