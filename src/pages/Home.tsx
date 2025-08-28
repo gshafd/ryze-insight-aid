@@ -32,11 +32,7 @@ const Home = () => {
   return <>
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-          backgroundImage: `url(${heroImage})`
-        }} />
-          <div className="absolute inset-0 bg-background/60" />
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
           
           <div className="relative z-10 container mx-auto px-6 text-center">
             <div className="max-w-4xl mx-auto">
@@ -84,7 +80,7 @@ const Home = () => {
         </section>
 
         {/* Features Section */}
-        <section className="py-20 bg-gradient-subtle">
+        <section className="py-20 bg-background">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4 gradient-text">
