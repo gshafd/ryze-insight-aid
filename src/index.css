@@ -2,80 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-/* AI Agent Workflow Platform Design System - Modern Dark Theme with Gradients */
+/* AI Agent Workflow Platform Design System - Clean White Theme with Purple Accents */
 
 @layer base {
   :root {
-    /* Core Brand Colors - Deep Space Theme */
-    --background: 222 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Core Brand Colors - Clean White Theme with Purple Accents */
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
 
-    --card: 222 84% 6%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
 
-    --popover: 222 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
 
-    /* Primary - Electric Blue to Purple Gradient */
-    --primary: 217 91% 59.8%;
-    --primary-foreground: 222.2 84% 4.9%;
-    --primary-glow: 240 100% 70%;
+    /* Primary - Purple Theme */
+    --primary: 268 61% 49%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 268 80% 65%;
 
-    /* Secondary - Muted Purple */
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    /* Secondary - Light Purple */
+    --secondary: 268 20% 95%;
+    --secondary-foreground: 268 61% 25%;
 
-    /* Muted - Subtle Dark */
-    --muted: 217.2 32.6% 15%;
-    --muted-foreground: 215 20.2% 65.1%;
+    /* Muted - Subtle Gray */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Accent - Electric Cyan */
-    --accent: 194 100% 60%;
-    --accent-foreground: 222.2 84% 4.9%;
-    --accent-glow: 194 100% 80%;
+    /* Accent - Complementary Purple */
+    --accent: 280 70% 60%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 280 90% 75%;
 
     /* Status Colors */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
     
     --success: 142 76% 36%;
-    --success-foreground: 210 40% 98%;
+    --success-foreground: 0 0% 98%;
     
     --warning: 45 93% 47%;
-    --warning-foreground: 222.2 84% 4.9%;
+    --warning-foreground: 0 0% 98%;
 
     /* UI Elements */
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 217 91% 59.8%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 268 61% 49%;
 
     --radius: 0.75rem;
 
     /* Custom Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --gradient-hero: linear-gradient(135deg, hsl(217 91% 59.8%) 0%, hsl(240 100% 70%) 50%, hsl(194 100% 60%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(222 84% 6%), hsl(217.2 32.6% 8%));
-    --gradient-subtle: linear-gradient(180deg, hsl(222 84% 4.9%), hsl(217.2 32.6% 7%));
+    --gradient-hero: linear-gradient(135deg, hsl(268 61% 49%) 0%, hsl(268 80% 65%) 50%, hsl(280 70% 60%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(268 20% 98%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(268 10% 98%));
 
-    /* Shadows with Glow Effects */
-    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
-    --shadow-accent-glow: 0 0 30px hsl(var(--accent) / 0.4);
-    --shadow-card: 0 10px 30px -10px hsl(222 84% 4.9% / 0.4);
-    --shadow-elegant: 0 20px 40px -12px hsl(222 84% 4.9% / 0.6);
+    /* Shadows with Purple Glow Effects */
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
+    --shadow-accent-glow: 0 0 30px hsl(var(--accent) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(268 61% 49% / 0.1);
+    --shadow-elegant: 0 20px 40px -12px hsl(268 61% 49% / 0.15);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    /* Sidebar (keeping existing) */
-    --sidebar-background: 222 84% 4.9%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 217 91% 59.8%;
-    --sidebar-primary-foreground: 222.2 84% 4.9%;
-    --sidebar-accent: 217.2 32.6% 17.5%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217.2 32.6% 17.5%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar - Light Purple Theme */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 224 71.4% 4.1%;
+    --sidebar-primary: 268 61% 49%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 268 20% 95%;
+    --sidebar-accent-foreground: 268 61% 25%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 268 61% 49%;
   }
 }
 
@@ -120,7 +120,7 @@
 
   /* Glass Effect */
   .glass {
-    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+    @apply backdrop-blur-xl bg-primary/5 border border-primary/20;
   }
 
   /* Animated Gradient Text */

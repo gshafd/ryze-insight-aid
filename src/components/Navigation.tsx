@@ -12,12 +12,12 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full z-50 glass border-b border-white/10">
+    <nav className="fixed top-0 w-full z-50 glass border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center shadow-glow">
-              <Brain className="w-6 h-6 text-white" />
+              <Brain className="w-6 h-6 text-primary-foreground" />
             </div>
             <span className="text-xl font-bold gradient-text">AI Agent Platform</span>
           </Link>
