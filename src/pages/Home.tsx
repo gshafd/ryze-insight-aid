@@ -3,50 +3,39 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { ArrowRight, Database, Brain, Shield, Zap, FileText, BarChart } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-
 const Home = () => {
-  const features = [
-    {
-      icon: Database,
-      title: "SharePoint Integration",
-      description: "Seamlessly connect to STAR SharePoint via Microsoft Graph API with full access control"
-    },
-    {
-      icon: Brain,
-      title: "AI-Powered RAG",
-      description: "Retrieval-Augmented Generation for accurate, evidence-backed responses"
-    },
-    {
-      icon: FileText,
-      title: "Multi-Format Ingestion", 
-      description: "Process PDF, Word, Excel, PowerPoint, and more with OCR support"
-    },
-    {
-      icon: Shield,
-      title: "Enterprise Security",
-      description: "On-premise deployment with full data privacy and access controls"
-    },
-    {
-      icon: Zap,
-      title: "Real-Time Processing",
-      description: "Live document ingestion and instant query responses"
-    },
-    {
-      icon: BarChart,
-      title: "Analytics Dashboard",
-      description: "Monitor performance, track queries, and view confidence scores"
-    }
-  ];
-
-  return (
-    <>
+  const features = [{
+    icon: Database,
+    title: "SharePoint Integration",
+    description: "Seamlessly connect to STAR SharePoint via Microsoft Graph API with full access control"
+  }, {
+    icon: Brain,
+    title: "AI-Powered RAG",
+    description: "Retrieval-Augmented Generation for accurate, evidence-backed responses"
+  }, {
+    icon: FileText,
+    title: "Multi-Format Ingestion",
+    description: "Process PDF, Word, Excel, PowerPoint, and more with OCR support"
+  }, {
+    icon: Shield,
+    title: "Enterprise Security",
+    description: "On-premise deployment with full data privacy and access controls"
+  }, {
+    icon: Zap,
+    title: "Real-Time Processing",
+    description: "Live document ingestion and instant query responses"
+  }, {
+    icon: BarChart,
+    title: "Analytics Dashboard",
+    description: "Monitor performance, track queries, and view confidence scores"
+  }];
+  return <>
       <main className="pt-20">
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${heroImage})` }}
-          />
+          <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+          backgroundImage: `url(${heroImage})`
+        }} />
           <div className="absolute inset-0 bg-background/60" />
           
           <div className="relative z-10 container mx-auto px-6 text-center">
@@ -54,7 +43,7 @@ const Home = () => {
               <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-float">
                 Autonomous AI Agent
                 <br />
-                <span className="text-4xl md:text-6xl">for Financial Assistance</span>
+                <span className="text-4xl md:text-6xl"></span>
               </h1>
               
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
@@ -109,9 +98,8 @@ const Home = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {features.map((feature, index) => {
-                const Icon = feature.icon;
-                return (
-                  <Card key={index} className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 group hover:shadow-glow">
+              const Icon = feature.icon;
+              return <Card key={index} className="bg-gradient-card border-primary/20 hover:border-primary/40 transition-all duration-300 group hover:shadow-glow">
                     <CardContent className="p-6 text-center">
                       <div className="w-12 h-12 bg-gradient-hero rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                         <Icon className="w-6 h-6 text-white" />
@@ -123,9 +111,8 @@ const Home = () => {
                         {feature.description}
                       </p>
                     </CardContent>
-                  </Card>
-                );
-              })}
+                  </Card>;
+            })}
             </div>
           </div>
         </section>
@@ -154,8 +141,6 @@ const Home = () => {
           </div>
         </section>
       </main>
-    </>
-  );
+    </>;
 };
-
 export default Home;
