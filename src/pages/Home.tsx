@@ -41,7 +41,7 @@ const Home = () => {
           <div className="relative z-10 container mx-auto px-6 text-center">
             <div className="max-w-4xl mx-auto">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-float">
-                Autonomous AI Agent
+                Academic Document Navigator
                 <br />
                 <span className="text-4xl md:text-6xl"></span>
               </h1>
